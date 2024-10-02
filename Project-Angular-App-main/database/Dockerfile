@@ -2,7 +2,7 @@ FROM  mysql:latest
 LABEL app="mysql"
 LABEL Author="Akash"
 
-RUN chown -R mysql:root /usr/src/app
+RUN chown -R mysql:root /var/lib/mysql/
 
 ARG MYSQL_DATABASE
 ARG MYSQL_USER
